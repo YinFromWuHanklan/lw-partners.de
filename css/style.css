@@ -131,13 +131,6 @@ section#services, section#partner {
 section#services h2, section#partner h2 {
   color: #FFF;
 }
-section#ueber-uns {
-  background-color: #999;
-  color: #FFF;
-}
-section#ueber-uns h2 {
-  color: #FFF;
-}
 section#ueber-uns .quote {
   position: relative;
 }
