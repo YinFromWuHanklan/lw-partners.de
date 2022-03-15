@@ -15,11 +15,11 @@ h4 {
 h1 {
   font-size: 1.8em;
   line-height: 2.5rem;
-  color: #385081;
+  color: #FFF;
 }
 
 h2 {
-  color: #385081;
+  color: #021c4f;
   font-size: 1.5rem;
 }
 
@@ -32,7 +32,7 @@ h4 {
 }
 
 .legal h1 {
-  color: #385081;
+  color: #021c4f;
 }
 .legal h2 {
   margin-top: 3rem;
@@ -57,6 +57,7 @@ ul li {
 .strong-paragraph {
   font-family: "Playfair Display", serif;
   font-weight: 700;
+  font-size: 1.2em;
 }
 
 .navbar {
@@ -72,14 +73,14 @@ ul li {
   }
 }
 .navbar button.navbar-toggler-icon {
-  color: #385081;
+  color: #021c4f;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #385081;
+  color: #021c4f;
 }
 @media (max-width: 599px) {
   .navbar .navbar-nav .nav-item {
-    border-bottom: 1px solid #385081;
+    border-bottom: 1px solid #021c4f;
     text-align: center;
   }
   .navbar .navbar-nav .nav-item:last-child {
@@ -121,32 +122,16 @@ ul li {
     opacity: 1;
   }
 }
-section.intro .intro-text {
-  color: #444;
+section.intro {
+  background-color: #021c4f;
+  color: #FFF;
 }
 section#services, section#partner {
-  background-color: #385081;
+  background-color: #021c4f;
   color: #FFF;
 }
 section#services h2, section#partner h2 {
   color: #FFF;
-}
-section#ueber-uns .quote {
-  position: relative;
-}
-section#ueber-uns .quote .fa-quote-right {
-  position: absolute;
-  color: #b9b9b9;
-  z-index: 1;
-  left: -1.2rem;
-  top: -2rem;
-}
-section#ueber-uns .quote p {
-  position: relative;
-  z-index: 5;
-}
-section#ueber-uns .quote p.quote-text {
-  font-style: italic;
 }
 section#kontakt {
   background-color: #666;
@@ -171,8 +156,30 @@ section#kontakt a:hover {
   color: #EB7F00;
 }
 
+.container-quote {
+  background-image: url("../images/placeholder-quote.jpg");
+  height: 500px;
+}
+.container-quote .quote {
+  position: relative;
+}
+.container-quote .quote .fa-quote-right {
+  position: absolute;
+  color: #b9b9b9;
+  z-index: 1;
+  left: -1.2rem;
+  top: -2rem;
+}
+.container-quote .quote p {
+  position: relative;
+  z-index: 5;
+}
+.container-quote .quote p.quote-text {
+  font-style: italic;
+}
+
 footer {
-  background-color: #385081;
+  background-color: #021c4f;
   color: #fff;
 }
 footer a {
@@ -217,13 +224,13 @@ hr {
 
 @media (min-width: 600px) {
   .parallax-1 {
-    background-image: url("../images/andreas-seidemann-wirtschaftspruefung.jpg");
+    background-image: url("../images/placeholder-parallax.jpg");
   }
 }
 
 @media (min-width: 600px) {
   .parallax-2 {
-    background-image: url("../images/andreas-seidemann-wirtschaftspruefung-partner.jpg");
+    background-image: url("../images/placeholder-parallax.jpg");
   }
 }
 

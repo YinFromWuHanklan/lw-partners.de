@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #385081; 
+$primary-color: #021c4f; 
 $secondary-color: #385081;
 $highlighting-color: #EB7F00;
 $grey-color: #666;
@@ -22,7 +22,7 @@ h4 {
 h1 {
     font-size: 1.8em;
     line-height: 2.5rem;
-    color: $primary-color;
+    color: #FFF;
 }
 
 h2 {
@@ -64,6 +64,7 @@ ul {
 .strong-paragraph {
     font-family: "Playfair Display", serif;
     font-weight: 700;
+    font-size: 1.2em;
 }
 
 // navbar
@@ -134,9 +135,8 @@ ul {
 
 section {
     &.intro {
-        .intro-text {
-            color: $text-dark;    
-        }
+        background-color: $primary-color;
+        color: #FFF;
     }
     &#services,
     &#partner {
@@ -152,23 +152,7 @@ section {
         // h2 {
         //     color: #FFF;
         // }
-        .quote {
-            position: relative;
-            .fa-quote-right {
-                position: absolute;
-                color: #b9b9b9;
-                z-index: 1;
-                left: -1.2rem;
-                top: -2rem;
-            }
-            p {
-                position: relative;
-                z-index: 5;
-                &.quote-text {
-                    font-style: italic;
-                }                
-            }
-        }
+        
     }
     &#kontakt {
         background-color: $grey-color;
@@ -188,6 +172,28 @@ section {
             &:hover {
                 color: $highlighting-color;
             }
+        }
+    }
+}
+
+.container-quote {
+    background-image: url("../images/placeholder-quote.jpg");
+    height: 500px;
+    .quote {
+        position: relative;
+        .fa-quote-right {
+            position: absolute;
+            color: #b9b9b9;
+            z-index: 1;
+            left: -1.2rem;
+            top: -2rem;
+        }
+        p {
+            position: relative;
+            z-index: 5;
+            &.quote-text {
+                font-style: italic;
+            }                
         }
     }
 }
@@ -249,12 +255,12 @@ hr {
 
 .parallax-1 {
     @include for-tablet-portrait-up {
-        background-image: url("../images/andreas-seidemann-wirtschaftspruefung.jpg");
+        background-image: url("../images/placeholder-parallax.jpg");
     }
 }
 .parallax-2 {
     @include for-tablet-portrait-up {
-        background-image: url("../images/andreas-seidemann-wirtschaftspruefung-partner.jpg");
+        background-image: url("../images/placeholder-parallax.jpg");
     }
 }
 .parallax-1, 
