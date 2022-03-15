@@ -133,6 +133,23 @@ section#services, section#partner {
 section#services h2, section#partner h2 {
   color: #FFF;
 }
+section#ueber-uns .quote {
+  position: relative;
+}
+section#ueber-uns .quote .fa-quote-right {
+  position: absolute;
+  color: #b9b9b9;
+  z-index: 1;
+  left: -1.2rem;
+  top: -2rem;
+}
+section#ueber-uns .quote p {
+  position: relative;
+  z-index: 5;
+}
+section#ueber-uns .quote p.quote-text {
+  font-style: italic;
+}
 section#kontakt {
   background-color: #666;
   color: #fff;
@@ -154,28 +171,6 @@ section#kontakt a {
 }
 section#kontakt a:hover {
   color: #EB7F00;
-}
-
-.container-quote {
-  background-image: url("../images/placeholder-quote.jpg");
-  height: 500px;
-}
-.container-quote .quote {
-  position: relative;
-}
-.container-quote .quote .fa-quote-right {
-  position: absolute;
-  color: #b9b9b9;
-  z-index: 1;
-  left: -1.2rem;
-  top: -2rem;
-}
-.container-quote .quote p {
-  position: relative;
-  z-index: 5;
-}
-.container-quote .quote p.quote-text {
-  font-style: italic;
 }
 
 footer {
@@ -230,7 +225,7 @@ hr {
 
 @media (min-width: 600px) {
   .parallax-2 {
-    background-image: url("../images/placeholder-parallax.jpg");
+    background-image: url("../images/placeholder-quote.jpg");
   }
 }
 

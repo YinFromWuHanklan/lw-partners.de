@@ -147,6 +147,23 @@ section {
         }
     }
     &#ueber-uns {
+        .quote {
+        position: relative;
+        .fa-quote-right {
+            position: absolute;
+            color: #b9b9b9;
+            z-index: 1;
+            left: -1.2rem;
+            top: -2rem;
+        }
+        p {
+            position: relative;
+            z-index: 5;
+            &.quote-text {
+                font-style: italic;
+            }                
+        }
+    }
         // background-color: #999;
         // color: #FFF;
         // h2 {
@@ -172,28 +189,6 @@ section {
             &:hover {
                 color: $highlighting-color;
             }
-        }
-    }
-}
-
-.container-quote {
-    background-image: url("../images/placeholder-quote.jpg");
-    height: 500px;
-    .quote {
-        position: relative;
-        .fa-quote-right {
-            position: absolute;
-            color: #b9b9b9;
-            z-index: 1;
-            left: -1.2rem;
-            top: -2rem;
-        }
-        p {
-            position: relative;
-            z-index: 5;
-            &.quote-text {
-                font-style: italic;
-            }                
         }
     }
 }
@@ -260,7 +255,7 @@ hr {
 }
 .parallax-2 {
     @include for-tablet-portrait-up {
-        background-image: url("../images/placeholder-parallax.jpg");
+        background-image: url("../images/placeholder-quote.jpg");
     }
 }
 .parallax-1, 
