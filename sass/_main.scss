@@ -1,7 +1,6 @@
 // Variables
-$primary-color: #021c4f; 
-$secondary-color: #385081;
-$highlighting-color: #EB7F00;
+$primary-color: #021c4f;
+$highlighting-color: #385081;
 $grey-color: #666;
 $text-dark: #444;
 
@@ -138,48 +137,56 @@ section {
         background-color: $primary-color;
         color: #FFF;
     }
-    &#services,
-    &#partner {
-        background-color: $primary-color;
+    &#ueber-uns {
+        .quote {
+            position: relative;
+            .fa-quote-right {
+                position: absolute;
+                color: #b9b9b9;
+                z-index: 1;
+                left: -1.2rem;
+                top: -2rem;
+            }
+            p {
+                position: relative;
+                z-index: 5;
+                &.quote-text {
+                    font-style: italic;
+                }                
+            }
+        }
+        
+    }
+    &#leistungen {
+        background-color: $grey-color;
+        color: #fff;
+        h2 {
+            color: #fff;
+        }
+    }
+    &#kooperationspartner {
+        background-image: url("../images/placeholder-cooperation.jpg");
+        height: 500px;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
         color: #FFF;
+        .opacity-background {
+            background-color: rgba(104,104,103,.5);
+            height: 500px;
+        }
         h2 {
             color: #FFF;
         }
     }
-    &#ueber-uns {
-        .quote {
-        position: relative;
-        .fa-quote-right {
-            position: absolute;
-            color: #b9b9b9;
-            z-index: 1;
-            left: -1.2rem;
-            top: -2rem;
-        }
-        p {
-            position: relative;
-            z-index: 5;
-            &.quote-text {
-                font-style: italic;
-            }                
-        }
-    }
-        // background-color: #999;
-        // color: #FFF;
-        // h2 {
-        //     color: #FFF;
-        // }
-        
-    }
     &#kontakt {
-        background-color: $grey-color;
+        background-color: $primary-color;
         color: #fff;
         h2 {
             color: #fff;
         }
         .contact-img {
             width: 100%;
-            box-shadow: 0px 2px 20px 3px $text-dark;
             @include for-tablet-portrait-down {
                 width: 60%;
             }
@@ -195,7 +202,7 @@ section {
 
 
 footer {
-    background-color: $primary-color;
+    background-color: $grey-color;
     color: #fff;
     a {
         text-decoration: none;
@@ -229,7 +236,9 @@ footer {
 }
 
 hr {
-    border-top: 1px solid #FFF;
+    &.bright {
+        border-top: 1px solid #FFF;
+    }
 }
 
 
