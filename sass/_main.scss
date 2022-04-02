@@ -200,6 +200,36 @@ section {
     }
 }
 
+.quote-box {
+    background-image: url("../images/placeholder-cooperation.jpg");
+        height: 400px;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        color: #FFF;
+        .opacity-background {
+            background-color: rgba(104,104,103,.5);
+            height: 500px;
+        }
+        .quote {
+            position: relative;
+            .fa-quote-right {
+                position: absolute;
+                color: #b9b9b9;
+                z-index: 1;
+                left: -1.2rem;
+                top: -2rem;
+            }
+            p {
+                position: relative;
+                z-index: 5;
+                &.quote-text {
+                    font-style: italic;
+                }                
+            }
+        }
+}
+
 
 footer {
     background-color: $grey-color;

@@ -187,6 +187,36 @@ section#kontakt a:hover {
   color: #385081;
 }
 
+.quote-box {
+  background-image: url("../images/placeholder-cooperation.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+.quote-box .opacity-background {
+  background-color: rgba(104, 104, 103, 0.5);
+  height: 500px;
+}
+.quote-box .quote {
+  position: relative;
+}
+.quote-box .quote .fa-quote-right {
+  position: absolute;
+  color: #b9b9b9;
+  z-index: 1;
+  left: -1.2rem;
+  top: -2rem;
+}
+.quote-box .quote p {
+  position: relative;
+  z-index: 5;
+}
+.quote-box .quote p.quote-text {
+  font-style: italic;
+}
+
 footer {
   background-color: #666;
   color: #fff;
