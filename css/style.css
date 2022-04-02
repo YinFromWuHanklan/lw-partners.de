@@ -122,26 +122,12 @@ ul li {
     opacity: 1;
   }
 }
-section.intro {
+section.intro, section#ueber-uns {
   background-color: #021c4f;
   color: #FFF;
 }
-section#ueber-uns .quote {
-  position: relative;
-}
-section#ueber-uns .quote .fa-quote-right {
-  position: absolute;
-  color: #b9b9b9;
-  z-index: 1;
-  left: -1.2rem;
-  top: -2rem;
-}
-section#ueber-uns .quote p {
-  position: relative;
-  z-index: 5;
-}
-section#ueber-uns .quote p.quote-text {
-  font-style: italic;
+section.intro h2, section#ueber-uns h2 {
+  color: #fff;
 }
 section#leistungen {
   background-color: #666;

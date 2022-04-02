@@ -133,29 +133,13 @@ ul {
 
 
 section {
-    &.intro {
+    &.intro,
+    &#ueber-uns {
         background-color: $primary-color;
         color: #FFF;
-    }
-    &#ueber-uns {
-        .quote {
-            position: relative;
-            .fa-quote-right {
-                position: absolute;
-                color: #b9b9b9;
-                z-index: 1;
-                left: -1.2rem;
-                top: -2rem;
-            }
-            p {
-                position: relative;
-                z-index: 5;
-                &.quote-text {
-                    font-style: italic;
-                }                
-            }
+        h2 {
+            color: #fff;
         }
-        
     }
     &#leistungen {
         background-color: $grey-color;
