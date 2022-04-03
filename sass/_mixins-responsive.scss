@@ -18,3 +18,7 @@
 @mixin for-tablet-portrait-down {
   @media (max-width: 599px) { @content; }
 }
+
+@mixin for-desktop-only {
+  @media (min-width: 768px) { @content; }
+}

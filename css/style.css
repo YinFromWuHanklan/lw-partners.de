@@ -54,6 +54,11 @@ ul li {
   line-height: 1.6rem;
 }
 
+a,
+a:hover {
+  color: #ababab;
+}
+
 .strong-paragraph {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -145,7 +150,7 @@ section#kooperationspartner {
   color: #FFF;
 }
 section#kooperationspartner .opacity-background {
-  background-color: rgba(104, 104, 103, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   height: 500px;
 }
 section#kooperationspartner h2 {
@@ -174,23 +179,28 @@ section#kontakt a:hover {
 }
 
 .quote-box {
-  background-image: url("../images/placeholder-cooperation.jpg");
-  height: 400px;
+  background-image: url("../images/placeholder-quote-box.jpg");
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFF;
 }
 .quote-box .opacity-background {
-  background-color: rgba(104, 104, 103, 0.5);
+  background-color: rgba(0, 0, 0, 0.35);
   height: 500px;
+}
+@media (min-width: 900px) {
+  .quote-box .container {
+    padding: 3rem;
+  }
 }
 .quote-box .quote {
   position: relative;
 }
 .quote-box .quote .fa-quote-right {
   position: absolute;
-  color: #b9b9b9;
+  color: #666;
   z-index: 1;
   left: -1.2rem;
   top: -2rem;
@@ -201,6 +211,12 @@ section#kontakt a:hover {
 }
 .quote-box .quote p.quote-text {
   font-style: italic;
+}
+@media (min-width: 900px) {
+  .quote-box .quote p.quote-text {
+    line-height: 2.5rem;
+    font-size: larger;
+  }
 }
 
 footer {

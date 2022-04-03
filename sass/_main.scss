@@ -60,6 +60,11 @@ ul {
     }
 }
 
+a,
+a:hover {
+    color: #ababab;
+}
+
 .strong-paragraph {
     font-family: "Playfair Display", serif;
     font-weight: 700;
@@ -156,7 +161,7 @@ section {
         background-size: cover;
         color: #FFF;
         .opacity-background {
-            background-color: rgba(104,104,103,.5);
+            background-color: rgba(0, 0, 0,.25);
             height: 500px;
         }
         h2 {
@@ -185,21 +190,26 @@ section {
 }
 
 .quote-box {
-    background-image: url("../images/placeholder-cooperation.jpg");
-        height: 400px;
+    background-image: url("../images/placeholder-quote-box.jpg");
+        height: 500px;
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover;
         color: #FFF;
         .opacity-background {
-            background-color: rgba(104,104,103,.5);
+            background-color: rgba(0, 0, 0, 0.35);
             height: 500px;
+        }
+        .container {
+            @include for-tablet-landscape-up {
+                padding: 3rem;
+            }
         }
         .quote {
             position: relative;
             .fa-quote-right {
                 position: absolute;
-                color: #b9b9b9;
+                color: $grey-color;
                 z-index: 1;
                 left: -1.2rem;
                 top: -2rem;
@@ -209,6 +219,10 @@ section {
                 z-index: 5;
                 &.quote-text {
                     font-style: italic;
+                    @include for-tablet-landscape-up {
+                        line-height: 2.5rem;
+                        font-size: larger;
+                    }
                 }                
             }
         }
