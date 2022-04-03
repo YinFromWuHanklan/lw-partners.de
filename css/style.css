@@ -56,7 +56,7 @@ ul li {
 
 a,
 a:hover {
-  color: #ababab;
+  color: #cecece;
 }
 
 .strong-paragraph {
@@ -156,6 +156,30 @@ section#kooperationspartner .opacity-background {
 section#kooperationspartner h2 {
   color: #FFF;
 }
+@media (min-width: 768px) {
+  section#kooperationen .coop-logo {
+    position: relative;
+  }
+  section#kooperationen .coop-logo .coop-logo--1,
+section#kooperationen .coop-logo .coop-logo--2,
+section#kooperationen .coop-logo .coop-logo--3 {
+    position: absolute;
+  }
+  section#kooperationen .coop-logo .coop-logo--1 {
+    top: 30%;
+  }
+  section#kooperationen .coop-logo .coop-logo--2 {
+    top: 25%;
+  }
+  section#kooperationen .coop-logo .coop-logo--3 {
+    top: 32%;
+  }
+}
+@media (max-width: 599px) {
+  section#kooperationen .coop-logo {
+    margin-bottom: 2rem;
+  }
+}
 section#kontakt {
   background-color: #021c4f;
   color: #fff;
@@ -169,6 +193,7 @@ section#kontakt .contact-img {
 @media (max-width: 599px) {
   section#kontakt .contact-img {
     width: 60%;
+    margin-top: 3rem;
   }
 }
 section#kontakt a {
@@ -176,6 +201,15 @@ section#kontakt a {
 }
 section#kontakt a:hover {
   color: #385081;
+}
+@media (max-width: 599px) {
+  section#kontakt .kontakt-links {
+    text-align: center;
+  }
+}
+section#kontakt .kontakt-links ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .quote-box {

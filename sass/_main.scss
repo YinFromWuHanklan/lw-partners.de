@@ -168,6 +168,32 @@ section {
             color: #FFF;
         }
     }
+    &#kooperationen {
+        @include for-desktop-only {
+            .coop-logo {
+                position: relative;
+                .coop-logo--1,
+                .coop-logo--2,
+                .coop-logo--3 {
+                    position: absolute;
+                }
+                .coop-logo--1 {
+                    top: 30%;
+                }
+                .coop-logo--2 {
+                    top: 25%;
+                }
+                .coop-logo--3 {
+                    top: 32%;
+                }
+            }
+        }
+        @include for-phone-only {
+            .coop-logo {
+                margin-bottom: 2rem;
+            }
+        }
+    }
     &#kontakt {
         background-color: $primary-color;
         color: #fff;
@@ -178,12 +204,22 @@ section {
             width: 100%;
             @include for-tablet-portrait-down {
                 width: 60%;
+                margin-top: 3rem;
             }
         }
         a {
             color: #fff;
             &:hover {
                 color: $highlighting-color;
+            }
+        }
+        .kontakt-links {
+            @include for-phone-only {
+                text-align: center;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;                
             }
         }
     }
