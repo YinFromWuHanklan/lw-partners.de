@@ -146,13 +146,6 @@ section {
             color: #fff;
         }
     }
-    &#leistungen {
-        background-color: $grey-color;
-        color: #fff;
-        h2 {
-            color: #fff;
-        }
-    }
     &#kooperationspartner {
         background-image: url("../images/placeholder-cooperation.jpg");
         height: 500px;
@@ -194,6 +187,7 @@ section {
             }
         }
     }
+    &#leistungen,
     &#kontakt {
         background-color: $primary-color;
         color: #fff;
