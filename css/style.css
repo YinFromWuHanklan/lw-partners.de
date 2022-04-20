@@ -134,7 +134,7 @@ section.intro, section#ueber-uns {
 section.intro h2, section#ueber-uns h2 {
   color: #fff;
 }
-section#kooperationspartner {
+section#partner {
   background-image: url("../images/placeholder-cooperation.jpg");
   height: 500px;
   background-position: center;
@@ -142,11 +142,11 @@ section#kooperationspartner {
   background-size: cover;
   color: #FFF;
 }
-section#kooperationspartner .opacity-background {
+section#partner .opacity-background {
   background-color: rgba(0, 0, 0, 0.25);
   height: 500px;
 }
-section#kooperationspartner h2 {
+section#partner h2 {
   color: #FFF;
 }
 @media (min-width: 768px) {
