@@ -147,16 +147,11 @@ section {
         }
     }
     &#partner {
-        background-image: url("../images/placeholder-cooperation.jpg");
         height: 500px;
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover;
         color: #FFF;
-        .opacity-background {
-            background-color: rgba(0, 0, 0,.25);
-            height: 500px;
-        }
         h2 {
             color: #FFF;
         }
