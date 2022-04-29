@@ -135,16 +135,12 @@ section.intro h2, section#ueber-uns h2 {
   color: #fff;
 }
 section#partner {
-  background-image: url("../images/placeholder-cooperation.jpg");
+  background-color: #021c4f;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFF;
-}
-section#partner .opacity-background {
-  background-color: rgba(0, 0, 0, 0.25);
-  height: 500px;
 }
 section#partner h2 {
   color: #FFF;
