@@ -136,7 +136,6 @@ section.intro h2, section#ueber-uns h2 {
 }
 section#partner {
   background-color: #021c4f;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,6 +143,19 @@ section#partner {
 }
 section#partner h2 {
   color: #FFF;
+}
+section#partner img {
+  width: 50%;
+}
+@media (max-width: 599px) {
+  section#partner img {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  section#partner {
+    padding-bottom: 0;
+  }
 }
 @media (min-width: 768px) {
   section#kooperationen .coop-logo {
@@ -294,7 +306,7 @@ hr.bright {
 
 @media (min-width: 600px) {
   .parallax-2 {
-    background-image: url("../images/partner-seidemann.jpg");
+    background-image: url("../images/placeholder-partner.jpg");
   }
 }
 
