@@ -20,7 +20,8 @@ h1 {
 
 h2 {
   color: #021c4f;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  text-decoration: underline;
 }
 
 h3 {
@@ -56,7 +57,7 @@ ul li {
 
 a,
 a:hover {
-  color: #cecece;
+  color: #385081;
 }
 
 .strong-paragraph {
@@ -144,17 +145,15 @@ section#partner {
 section#partner h2 {
   color: #FFF;
 }
+section#partner a {
+  color: #007bff;
+}
 section#partner img {
   width: 50%;
 }
 @media (max-width: 599px) {
   section#partner img {
     width: 100%;
-  }
-}
-@media (max-width: 599px) {
-  section#partner {
-    padding-bottom: 0;
   }
 }
 @media (min-width: 768px) {
