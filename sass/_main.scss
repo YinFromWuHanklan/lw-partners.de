@@ -159,9 +159,9 @@ section {
         h2 {
             color: #FFF;
         }
-        a {
-            color: #007bff;
-        }
+        // a {
+        //     color: #007bff;
+        // }
         img {
             width: 50%;
             @include for-phone-only {
@@ -330,7 +330,7 @@ hr {
 }
 .parallax-2 {
     @include for-tablet-portrait-up {
-        background-image: url("../images/placeholder-partner.jpg");
+        background-image: url("../images/partner-seidemann.jpg");
     }
 }
 .parallax-1, 

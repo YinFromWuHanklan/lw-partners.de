@@ -145,9 +145,6 @@ section#partner {
 section#partner h2 {
   color: #FFF;
 }
-section#partner a {
-  color: #007bff;
-}
 section#partner img {
   width: 50%;
 }
@@ -305,7 +302,7 @@ hr.bright {
 
 @media (min-width: 600px) {
   .parallax-2 {
-    background-image: url("../images/placeholder-partner.jpg");
+    background-image: url("../images/partner-seidemann.jpg");
   }
 }
 
