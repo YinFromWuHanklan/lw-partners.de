@@ -235,7 +235,7 @@ section {
 }
 
 .quote-box {
-    background-image: url("../images/placeholder-quote-box.jpg");
+    background-image: url("../images/quote-box.jpg");
         height: 500px;
         background-position: center; 
         background-repeat: no-repeat; 
@@ -332,7 +332,7 @@ hr {
 
 .parallax-1 {
     @include for-tablet-portrait-up {
-        background-image: url("../images/placeholder-parallax.jpg");
+        background-image: url("../images/parallax.jpg");
     }
 }
 .parallax-2 {
